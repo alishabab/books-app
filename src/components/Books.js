@@ -20,6 +20,7 @@ const useStyles = makeStyles(() => ({
   },
 
   progress: {
+    textAlign: 'center',
     marginTop: '20px',
   },
 }));
@@ -39,7 +40,12 @@ const Books = () => {
 
   return (
     <div>
-      { loading && <CircularProgress color="secondary" className={classes.progress} /> }
+      { loading && (
+        <div className={classes.progress}>
+          <CircularProgress color="secondary" />
+        </div>
+      )}
+
       <Grid container className={classes.root} spacing={8}>
         { !loading && books.map(book => (
           <Grid item xs={12} sm={6} lg={4} xl={4} key={book.id}>

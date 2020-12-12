@@ -2,16 +2,15 @@ import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 import Appbar from './components/Appbar';
 import Books from './components/Books';
-import Thumbnail from './components/Thumbnail';
-import './App.css';
+import Book from './components/Book';
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <Appbar />
       <Switch>
         <Route exact path={['/', '/books']} component={Books} />
-        <Route exact path="/books/:id" component={Thumbnail} />
+        <Route exact path="/books/:id" component={Book} />
       </Switch>
     </div>
   );
