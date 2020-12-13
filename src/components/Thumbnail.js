@@ -26,13 +26,13 @@ const Thumbnail = ({ book }) => {
         <CardMedia
           className={classes.image}
           component="img"
-          alt={book.volumeInfo.title}
-          image={book.volumeInfo.imageLinks.smallThumbnail}
+          alt={book.title}
+          image={book.smallThumbnail}
           title="Contemplative Reptile"
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
-            {book.volumeInfo.title}
+            {book.title}
           </Typography>
         </CardContent>
       </CardActionArea>
@@ -42,12 +42,8 @@ const Thumbnail = ({ book }) => {
 
 Thumbnail.propTypes = {
   book: PropTypes.shape({
-    volumeInfo: PropTypes.shape({
-      title: PropTypes.string.isRequired,
-      imageLinks: PropTypes.shape({
-        smallThumbnail: PropTypes.string.isRequired,
-      }),
-    }),
+    title: PropTypes.string.isRequired,
+    smallThumbnail: PropTypes.string.isRequired,
   }).isRequired,
 };
 

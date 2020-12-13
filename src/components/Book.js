@@ -57,20 +57,20 @@ const Book = () => {
       { book && (
       <div className={classes.root}>
         <img
-          src={book.volumeInfo.imageLinks.thumbnail}
-          alt={book.volumeInfo.title}
+          src={book.thumbnail}
+          alt={book.title}
           className={classes.image}
         />
         <div>
-          <h3>{book.volumeInfo.title}</h3>
-          <p>{book.volumeInfo.subtitle}</p>
+          <h3>{book.title}</h3>
+          <p>{book.subtitle}</p>
           <h4>
             Authored By:
-            <i>{book.volumeInfo.authors ? book.volumeInfo.authors[0] : 'Not Available'}</i>
+            <i>{book.authors ? book.authors[0] : 'Not Available'}</i>
           </h4>
           <div>
             <Button onClick={goBackHandle} variant="contained" className={classes.button}>Back</Button>
-            <Button variant="contained" href={book.saleInfo.buyLink} color="primary" target="_blank">
+            <Button variant="contained" href={book.buyLink} color="primary" target="_blank">
               <ShopIcon />
               Buy
             </Button>

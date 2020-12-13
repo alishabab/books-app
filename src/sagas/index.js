@@ -7,7 +7,15 @@ import bookService from '../service/book.service';
 function* fetchBooks() {
   try {
     const { data } = yield bookService.getBooks();
-    const books = data.items;
+    const books = data.items.map(item => ({
+      id: item.id,
+      title: item.volumeInfo.title,
+      smallThumbnail: item.volumeInfo.imageLinks.smallThumbnail,
+      thumbnail: item.volumeInfo.imageLinks.thumbnail,
+      buyLink: item.saleInfo.buyLink,
+      authors: item.volumeInfo.authors,
+    }));
+
     yield put({ type: BOOKS_SUCCESS, payload: books });
   } catch (err) {
     yield put({ type: BOOKS_FAIL, payload: err.message });
