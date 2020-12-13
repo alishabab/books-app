@@ -1,70 +1,139 @@
-# Getting Started with Create React App
+<!--
+*** Thanks for checking out this README Template. If you have a suggestion that would
+*** make this better, please fork the repo and create a pull request or simply open
+*** an issue with the tag "enhancement".
+*** Thanks again! Now go create something AMAZING! :D
+-->
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<!-- PROJECT SHIELDS -->
+<!--
+*** I'm using markdown "reference style" links for readability.
+*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
+*** See the bottom of this document for the declaration of the reference variables
+*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
+*** https://www.markdownguide.org/basic-syntax/#reference-style-links
+-->
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
 
-## Available Scripts
+<!-- PROJECT LOGO -->
 
-In the project directory, you can run:
+<br />
+<p align="center">
+  <a href="git@github.com:alishabab/books-app.git">
+    <p align="center"> <img src="https://user-images.githubusercontent.com/33728992/102014711-659e1f80-3d7d-11eb-9620-c6aac737b4bd.gif" alt="books-app" width="600" height="400"> </p>
+  </a>
 
-### `npm start`
+  <h2 align="center">Books App</h2>
+  <h3 align="center">A react-redux single page application, where user can browse a list of books, see the details of a book and buy a book.</h3>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+  <p align="center">
+    <a href="https://github.com/alishabab/books-app/issues">Report Bug</a>
+    · 
+    <a href="https://github.com/alishabab/books-app/issues">Request Feature</a>
+  </p>
+</p>
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+<!-- TABLE OF CONTENTS -->
+## Table of Contents
 
-### `npm test`
+* [About the Project](#about-the-project)
+* [Installation](#installation)
+* [Test](#test)
+* [Live Link](#Live-Link)
+* [Built With](#built-with)
+* [Contact](#Authors)
+* [Acknowledgements](#acknowledgements)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<!-- ABOUT THE PROJECT -->
+## About The Project
 
-### `npm run build`
+In this project I have developed a single page application with react and redux libraries. App name is Books App, where user can browse a list of books and buy them.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+App uses react router to route to different components and redux saga to dispatch async actions. An external api service (googleapis) is used to get books data.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Layout is developed with material-ui components.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+<!-- Live Link  -->
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Live Link
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+[Click here](https://secret-bastion-03058.herokuapp.com/)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+<!-- INSTALLATION -->
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Installation
 
-## Learn More
+To run 'Books App' locally, clone the repository, navigate to it's directory.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+#### Follow these commands step by step:-
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+git@github.com:alishabab/books-app.git
+cd books-app
+npm install
+npm start
+```
 
-### Code Splitting
+Now go to [localhost:3000](http://localhost:3000) in your browser.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+<!-- Test -->
 
-### Analyzing the Bundle Size
+## Test
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+To run unit test run `npm test` in root directory.
 
-### Making a Progressive Web App
+<!-- BUILD WITH -->
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Built With
 
-### Advanced Configuration
+- HTML/CSS
+- React
+- Redux
+- Redux Saga
+- Material-UI
+- Eslint
+- Stylelint
+- Jest
+- ES6
+- NPM
+- Github
+- Heroku for Live version deployment
+- GoogleApis
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+<!-- CONTACT -->
+## Authors
 
-### Deployment
+👤 **Shabab Ali** 
+    
+- [LinkedIn](https://www.linkedin.com/in/shababali/)
+- [GitHub](https://github.com/alishabab)
+- [Email](shababsaifi@gmail.com)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+<!-- acknowledgments -->
 
-### `npm run build` fails to minify
+## Acknowledgments
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- [Google APIs](https://developers.google.com/books/docs/v1/reference/)
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[contributors-shield]: https://img.shields.io/github/contributors/alishabab/books-app.svg?style=flat-square
+[contributors-url]: https://github.com/alishabab/books-app/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/alishabab/books-app.svg?style=flat-square
+[forks-url]: https://github.com/alishabab/books-app/network/members
+[stars-shield]: https://img.shields.io/github/stars/alishabab/books-app.svg?style=flat-square
+[stars-url]: https://github.com/alishabab/books-app/stargazers
+[issues-shield]: https://img.shields.io/github/issues/alishabab/books-app.svg?style=flat-square
+[issues-url]: https://github.com/alishabab/books-app/issues
+
+## 📝 License
+
+This project is [MIT](https://opensource.org/licenses/MIT) licensed.

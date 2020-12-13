@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Books React-Redux Component should render with given state from Redux store 1`] = `
+<div>
+  <div
+    className="MuiGrid-root makeStyles-root-1 MuiGrid-container MuiGrid-spacing-xs-8"
+  >
+    <div
+      className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-lg-4 MuiGrid-grid-xl-4"
+    >
+      <a
+        className="makeStyles-link-2"
+        href="/books/kIYSAAAAIAAJ"
+        onClick={[Function]}
+      >
+        <div
+          className="MuiPaper-root MuiCard-root makeStyles-root-4 MuiPaper-elevation1 MuiPaper-rounded"
+        >
+          <button
+            className="MuiButtonBase-root MuiCardActionArea-root"
+            disabled={false}
+            onBlur={[Function]}
+            onDragLeave={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+            tabIndex={0}
+            type="button"
+          >
+            <img
+              alt="Thesavrvs Lingvae Latinae Compendiarivs Or, A Compendious Dictionary of the Latin Tongue"
+              className="MuiCardMedia-root makeStyles-image-5 MuiCardMedia-media MuiCardMedia-img"
+              src="http://books.google.com/books/content?id=kIYSAAAAIAAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
+              title="Contemplative Reptile"
+            />
+            <div
+              className="MuiCardContent-root"
+            >
+              <h2
+                className="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom"
+              >
+                Thesavrvs Lingvae Latinae Compendiarivs Or, A Compendious Dictionary of the Latin Tongue
+              </h2>
+            </div>
+            <span
+              className="MuiCardActionArea-focusHighlight"
+            />
+          </button>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+`;
