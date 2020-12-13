@@ -10,6 +10,7 @@ function* fetchBooks() {
     const books = data.items.map(item => ({
       id: item.id,
       title: item.volumeInfo.title,
+      subtitle: item.volumeInfo.subtitle,
       smallThumbnail: item.volumeInfo.imageLinks.smallThumbnail,
       thumbnail: item.volumeInfo.imageLinks.thumbnail,
       buyLink: item.saleInfo.buyLink,
