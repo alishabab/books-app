@@ -9,7 +9,7 @@ function App() {
     <div>
       <Appbar />
       <Switch>
-        <Route exact path={['/', '/books', '/books-app']} component={Books} />
+        <Route exact path={['/', '/books']} component={Books} />
         <Route exact path="/books/:id" component={Book} />
       </Switch>
     </div>

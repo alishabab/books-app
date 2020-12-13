@@ -1,5 +1,5 @@
 {
-  "homepage": "https://alishabab.github.io/books-app",
+  "homepage": "https://secret-bastion-03058.herokuapp.com/",
   "name": "books-app",
   "version": "0.1.0",
   "private": true,
@@ -24,8 +24,6 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
